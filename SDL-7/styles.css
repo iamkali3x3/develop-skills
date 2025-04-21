@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a2e; /* Dark background */
+    color: #fff; /* White text for contrast */
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #162447; /* Dark blue background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #e94560; /* Bright pink for greeting */
+}
+
+.header p {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.calculator {
+    margin-top: 30px;
+    background-color: #1f4068; /* Dark blue-gray background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.calculator h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 1.1em;
+}
+
+label {
+    display: block;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 12px;
+    width: 100%;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    background-color: #f0f0f0;
+}
+
+button {
+    padding: 12px 30px;
+    background-color: #e94560; /* Bright pink button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f3a683; /* Light pink on hover */
+}
+
+#lifespan-results {
+    margin-top: 20px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #fff;
+}

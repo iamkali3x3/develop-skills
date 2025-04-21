@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gmail Registration</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Create your Google Account</h2>
+    <form id="gmailForm">
+      
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" required>
+      <small class="helper-text">Enter your first name.</small>
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" required>
+      <small class="helper-text">Enter your last name.</small>
+
+      <label for="username">Username</label>
+      <input type="text" id="username" required>
+      <small class="helper-text">At least 6 characters. No spaces allowed.</small>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" required>
+      <small class="helper-text">At least 6 characters.</small>
+
+      <label for="confirmPassword">Confirm Password</label>
+      <input type="password" id="confirmPassword" required>
+      <small class="helper-text">Must match the password above.</small>
+
+      <label for="phone">Phone Number</label>
+      <input type="text" id="phone" required>
+      <small class="helper-text">Enter a 10-digit phone number.</small>
+
+      <label for="recovery">Recovery Email</label>
+      <input type="email" id="recovery" required>
+      <small class="helper-text">Enter a valid recovery email address.</small>
+
+      <button type="submit">Submit</button>
+      <p id="errorMsg" class="error"></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifespan Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="greeting"></h1>
+            <p id="current-time"></p>
+        </div>
+
+        <div class="calculator">
+            <h2>Enter Your Birth Date and Death Date</h2>
+            <div class="form-group">
+                <label for="birthdate">Birth Date:</label>
+                <input type="date" id="birthdate">
+            </div>
+            <div class="form-group">
+                <label for="deathdate">Death Date:</label>
+                <input type="date" id="deathdate">
+            </div>
+            <button onclick="calculateLifespan()">Calculate Lifespan</button>
+            <div id="lifespan-results"></div>
+        </div>
+    </div>
+</body>
+</html>

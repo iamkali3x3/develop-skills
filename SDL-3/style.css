@@ -1,0 +1,125 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #4c69ba, #3b5998);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #3b5998;
+  margin-bottom: 25px;
+  font-size: 26px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 12px 0 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: #3b5998;
+  box-shadow: 0 0 5px rgba(59, 89, 152, 0.3);
+  outline: none;
+}
+
+.gender {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.gender label {
+  font-weight: normal;
+  color: #555;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #3b5998;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2d4373;
+  transform: scale(1.02);
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+/* Fade-in animation on container */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* Smooth focus animation on inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.2s ease;
+}
+
+input:focus {
+  border-color: #3b5998;
+  box-shadow: 0 0 5px rgba(59, 89, 152, 0.3);
+  transform: scale(1.02);
+}
+
+/* Button animation on hover already present, but feel free to tweak: */
+button:hover {
+  background-color: #2d4373;
+  transform: scale(1.03);
+}
