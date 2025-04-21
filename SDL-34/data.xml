@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="data.xslt"?>
+<students xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="data.xsd">
+    <student>
+        <id>101</id>
+        <name>Nikhil Pattewar</name>
+        <age>21</age>
+        <course>Cyber Security</course>
+    </student>
+    <student>
+        <id>102</id>
+        <name>Prathamesh Pattewar</name>
+        <age>16</age>
+        <course>Data Science</course>
+    </student>
+    <student>
+        <id>103</id>
+        <name>Sai Telalwar</name>
+        <age>24</age>
+        <course>MBBS</course>
+    </student>
+    <student>
+        <id>104</id>
+        <name>Devaj Telalwar</name>
+        <age>10</age>
+        <course>School</course>
+    </student>
+</students>

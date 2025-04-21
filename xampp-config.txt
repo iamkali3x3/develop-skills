@@ -1,0 +1,10 @@
+sudo chmod +x [file_name.run]
+sudo ./[file_name.run]
+
+/Other Locations/Computer/opt/lampp/htdocs/
+sudo chmod -R 777 /opt/lampp/htdocs/
+
+Troubleshooting:
+sudo lsof -i :80
+sudo systemctl status apache2
+sudo service apache2 status

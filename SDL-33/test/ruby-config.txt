@@ -1,0 +1,14 @@
+sudo apt update
+sudo apt install ruby-full -y
+ruby -v
+
+Keep index.html, reverse_name.rb and server.rb in same folder.
+Open terminal in that folder.
+
+sudo a2enmod cgi
+
+chmod +x reverse_name.rb
+
+ruby server.rb
+
+Go to browser : http://localhost:8000/index.html
