@@ -1,0 +1,104 @@
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #2c3e50;
+    font-size: 16px;
+}
+
+/* Main Container */
+.container {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Uniform section spacing */
+.section {
+    margin-bottom: 25px;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #2ecc71;
+}
+
+/* Hover Box */
+.hover-box {
+    width: 100%;
+    height: 120px;
+    background-color: #3498db;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="submit"] {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 1rem;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-sizing: border-box;
+    font-weight: 500;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Submit Button Specific */
+input[type="submit"] {
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #d35400;
+}
+
+/* Form styling */
+form {
+    margin-top: 10px;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Image Gallery</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid gallery-container">
+        <h1 class="text-center my-4">Image Gallery</h1>
+        
+        <!-- Filter Buttons -->
+        <div class="text-center mb-4">
+            <button class="btn btn-outline-primary filter-btn active" data-filter="all">All</button>
+            <button class="btn btn-outline-primary filter-btn" data-filter="nature">Nature</button>
+            <button class="btn btn-outline-primary filter-btn" data-filter="animals">Animals</button>
+            <button class="btn btn-outline-primary filter-btn" data-filter="architecture">Architecture</button>
+        </div>
+        
+        <!-- Gallery Grid -->
+        <div class="row gallery-grid">
+            <!-- Image 1 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 gallery-item nature">
+                <div class="gallery-card">
+                    <img src="https://source.unsplash.com/random/600x400/?nature" class="img-fluid" alt="Nature Image">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h5>Beautiful Nature</h5>
+                            <p>Scenic landscape view</p>
+                            <a href="#" class="btn btn-sm btn-light view-btn" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="https://source.unsplash.com/random/600x400/?nature" data-title="Beautiful Nature" data-desc="Scenic landscape view">
+                                <i class="fas fa-expand"></i> View
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Image 2 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 gallery-item animals">
+                <div class="gallery-card">
+                    <img src="https://source.unsplash.com/random/600x400/?lion" class="img-fluid" alt="Lion Image">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h5>Wild Lion</h5>
+                            <p>King of the jungle</p>
+                            <a href="#" class="btn btn-sm btn-light view-btn" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="https://source.unsplash.com/random/600x400/?lion" data-title="Wild Lion" data-desc="King of the jungle">
+                                <i class="fas fa-expand"></i> View
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Image 3 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 gallery-item architecture">
+                <div class="gallery-card">
+                    <img src="https://source.unsplash.com/random/600x400/?building" class="img-fluid" alt="Building Image">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h5>Modern Architecture</h5>
+                            <p>Contemporary building design</p>
+                            <a href="#" class="btn btn-sm btn-light view-btn" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="https://source.unsplash.com/random/600x400/?building" data-title="Modern Architecture" data-desc="Contemporary building design">
+                                <i class="fas fa-expand"></i> View
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Image 4 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 gallery-item nature">
+                <div class="gallery-card">
+                    <img src="https://source.unsplash.com/random/600x400/?mountain" class="img-fluid" alt="Mountain Image">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h5>Mountain View</h5>
+                            <p>Snow-capped peaks</p>
+                            <a href="#" class="btn btn-sm btn-light view-btn" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="https://source.unsplash.com/random/600x400/?mountain" data-title="Mountain View" data-desc="Snow-capped peaks">
+                                <i class="fas fa-expand"></i> View
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Image 5 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 gallery-item animals">
+                <div class="gallery-card">
+                    <img src="https://source.unsplash.com/random/600x400/?elephant" class="img-fluid" alt="Elephant Image">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h5>Elephant Family</h5>
+                            <p>Gentle giants in the wild</p>
+                            <a href="#" class="btn btn-sm btn-light view-btn" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="https://source.unsplash.com/random/600x400/?elephant" data-title="Elephant Family" data-desc="Gentle giants in the wild">
+                                <i class="fas fa-expand"></i> View
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Image 6 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 gallery-item architecture">
+                <div class="gallery-card">
+                    <img src="https://source.unsplash.com/random/600x400/?bridge" class="img-fluid" alt="Bridge Image">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h5>Iconic Bridge</h5>
+                            <p>Engineering marvel</p>
+                            <a href="#" class="btn btn-sm btn-light view-btn" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="https://source.unsplash.com/random/600x400/?bridge" data-title="Iconic Bridge" data-desc="Engineering marvel">
+                                <i class="fas fa-expand"></i> View
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Image 7 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 gallery-item nature">
+                <div class="gallery-card">
+                    <img src="https://source.unsplash.com/random/600x400/?forest" class="img-fluid" alt="Forest Image">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h5>Dense Forest</h5>
+                            <p>Lush green trees</p>
+                            <a href="#" class="btn btn-sm btn-light view-btn" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="https://source.unsplash.com/random/600x400/?forest" data-title="Dense Forest" data-desc="Lush green trees">
+                                <i class="fas fa-expand"></i> View
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Image 8 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 gallery-item animals">
+                <div class="gallery-card">
+                    <img src="https://source.unsplash.com/random/600x400/?bird" class="img-fluid" alt="Bird Image">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h5>Colorful Bird</h5>
+                            <p>Exotic plumage</p>
+                            <a href="#" class="btn btn-sm btn-light view-btn" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="https://source.unsplash.com/random/600x400/?bird" data-title="Colorful Bird" data-desc="Exotic plumage">
+                                <i class="fas fa-expand"></i> View
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Image Title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="" id="modalImage" class="img-fluid" alt="Modal Image">
+                    <p class="mt-3" id="modalDescription">Image description goes here</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="#" class="btn btn-primary" id="downloadBtn">Download</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

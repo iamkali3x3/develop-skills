@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Event Handlers Demo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // JavaScript (same handlers as before)
+        function showMessage() {
+            alert('Button was clicked!');
+        }
+
+        function changeColor() {
+            document.getElementById('hoverBox').style.backgroundColor = '#FFD700';
+        }
+
+        function resetColor() {
+            document.getElementById('hoverBox').style.backgroundColor = '#3498db';
+        }
+
+        function onFocusHandler() {
+            document.getElementById('inputField').style.borderColor = '#2ecc71';
+        }
+
+        function onBlurHandler() {
+            document.getElementById('inputField').style.borderColor = '#e74c3c';
+        }
+
+        function onKeydownHandler(event) {
+            alert("You pressed the key: " + event.key);
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('Form Submitted!');
+        }
+
+        function onResize() {
+            console.log('The window has been resized!');
+        }
+
+        function onScroll() {
+            console.log('You are scrolling the page!');
+        }
+
+        window.onresize = onResize;
+        window.onscroll = onScroll;
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <h1>JavaScript Event Handlers Demo</h1>
+
+    <div class="section">
+        <button onclick="showMessage()">Click Me</button>
+    </div>
+
+    <div class="section">
+        <div id="hoverBox" onmouseover="changeColor()" onmouseout="resetColor()" class="hover-box">
+            Hover over me!
+        </div>
+    </div>
+
+    <div class="section">
+        <input type="text" id="inputField" onfocus="onFocusHandler()" onblur="onBlurHandler()" placeholder="Click to focus">
+    </div>
+
+    <div class="section">
+        <input type="text" onkeydown="onKeydownHandler(event)" placeholder="Press a key">
+    </div>
+
+    <form onsubmit="handleSubmit(event)">
+        <div class="section">
+            <input type="text" placeholder="Enter your name" required>
+        </div>
+        <div class="section">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

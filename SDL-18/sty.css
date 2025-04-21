@@ -1,0 +1,26 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Video Container Styling */
+.video-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Video Styling */
+.video-container video {
+    width: 80%; /* Adjusts the width of the video */
+    max-width: 800px;
+    border-radius: 10px; /* Rounded corners for the video */
+}
+
+/* Heading Styling */
+.video-container h1 {
+    margin-bottom: 20px;
+    color: #333; /* Dark text color for the heading */
+}

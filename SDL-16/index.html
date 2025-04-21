@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Registration Form -->
+        <div id="registration-section" class="form-section">
+            <h2>Registration Form</h2>
+            <form id="registration-form">
+                <div class="form-group">
+                    <label for="first-name">First Name*</label>
+                    <input type="text" id="first-name" required>
+                    <span id="first-name-error" class="error-message"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="last-name">Last Name*</label>
+                    <input type="text" id="last-name" required>
+                    <span id="last-name-error" class="error-message"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" required>
+                    <span id="email-error" class="error-message"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone">
+                    <span id="phone-error" class="error-message"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="organization">Organization/Company</label>
+                    <input type="text" id="organization">
+                </div>
+                
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div class="radio-group">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                        
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob">
+                </div>
+                
+                <div class="form-group">
+                    <label>Hobbies</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="reading" name="hobbies" value="reading">
+                        <label for="reading">Reading</label>
+                        
+                        <input type="checkbox" id="sports" name="hobbies" value="sports">
+                        <label for="sports">Sports</label>
+                        
+                        <input type="checkbox" id="music" name="hobbies" value="music">
+                        <label for="music">Music</label>
+                        
+                        <input type="checkbox" id="travel" name="hobbies" value="travel">
+                        <label for="travel">Travel</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="bio">Short Bio</label>
+                    <textarea id="bio" rows="3"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password*</label>
+                    <input type="password" id="password" required>
+                    <span id="password-error" class="error-message"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password*</label>
+                    <input type="password" id="confirm-password" required>
+                    <span id="confirm-password-error" class="error-message"></span>
+                </div>
+                
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <!-- Display Section -->
+        <div id="display-section" class="form-section" style="display:none;">
+            <h2>Registration Details</h2>
+            <div id="user-details"></div>
+            <button id="back-to-form">Back to Form</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
